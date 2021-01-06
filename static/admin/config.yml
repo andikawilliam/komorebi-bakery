@@ -20,5 +20,5 @@ collections:
         name: "contact"
         file: "content/contact.yml"
         fields:
-          - { label: Instagram, name: instagram, widget: string }
-          - { label: Whatsapp, name: whatsapp, widget: string }
+          - { label: Instagram, name: instagram, widget: string, hint: "Without @" }
+          - { label: Whatsapp, name: whatsapp, widget: string, hint: "Without (+)"}

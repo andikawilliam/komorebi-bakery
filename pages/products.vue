@@ -10,7 +10,9 @@
         <div class="text-center text-4xl sm:text-6xl lg:text-6xl xl:text-7xl font-black line-height p-2 sm:p-4">
           Our Specialties
         </div>
-        <div class="w-4/5 mx-auto grid grid-cols-2 gap-4 sm:gap-24 text-lg text-center mt-6">
+        <div
+          class="w-4/5 mx-auto grid grid-cols-2 gap-4 sm:gap-24 text-lg font-semibold text-center mt-6"
+        >
           <div>
             <img 
               class="transition duration-300 transform hover:-translate-y-3 rounded-full"

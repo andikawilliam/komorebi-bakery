@@ -10,10 +10,10 @@
         <div
           class="text-center text-4xl sm:text-6xl lg:text-6xl xl:text-7xl font-black line-height p-2 sm:p-4"
         >
-          <p class="">
-            Treat yourself a cookie with
+          <p>
+            {{ home.headline }}
             <span class="text-red-500 opacity-80">
-              komorebi
+              {{ home.highlight }}
             </span>
           </p>
         </div>
@@ -34,7 +34,14 @@
 import { InstagramIcon, WhatsAppIcon } from 'vue-simple-icons'
 
 export default {
-  transition: 'page'
+  transition: 'page',
+  async asyncData({ $content }) {
+    const home = await $content("home").fetch();
+
+    return {
+      home,
+    };
+  }
 }
 </script>
 

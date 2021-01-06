@@ -35,5 +35,9 @@ html {
 
 body {
   background-color: #252525;
+  background-size: 60px 60px;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.6) .2px, transparent .5px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.6) .2px, transparent .5px);
 }
 </style>
