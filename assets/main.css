@@ -1,0 +1,14 @@
+.page-enter-active, .page-leave-active { transition: opacity 1s; }
+.page-enter, .page-leave-active { opacity: 0; }
+
+.button {
+  @apply bg-opacity-40 rounded-lg p-2 hover:bg-opacity-80;
+}
+
+.bg-shadow {
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.45);
+}
+
+.line-height {
+  line-height: 1.25em;
+}

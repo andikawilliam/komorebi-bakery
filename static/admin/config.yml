@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.yml"
+        fields:
+          - { label: Headline, name: headline, widget: string }
+          - { label: Highlight, name: highlight, widget: string }
+      
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.yml"
+        fields:
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: Whatsapp, name: whatsapp, widget: string }
