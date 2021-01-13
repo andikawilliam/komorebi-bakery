@@ -8,7 +8,7 @@
     <div class="flex justify-center items-center h-screen">
       <div class="w-4/5 lg:w-2/3">
         <div
-          class="text-center text-4xl sm:text-6xl lg:text-6xl xl:text-7xl font-black line-height p-2 sm:p-4"
+          class="text-center text-4xl sm:text-6xl lg:text-6xl xl:text-7xl font-black tracking-wide line-height p-2 sm:p-4"
         >
           <p>
             {{ home.headline }}
