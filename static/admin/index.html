@@ -6,12 +6,15 @@
     <title>Content Manager</title>
     <!-- Include the script that enables Netlify Identity on this page. -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      CMS.registerPreviewStyle("/index.css");
+    </script>
     <script type="module">
+      
       import htm from 'https://unpkg.com/htm?module'
       const html = htm.bind(h);
       
