@@ -2,7 +2,7 @@
   <div
     class="h-screen bg-shadow bg-center bg-cover text-gray-200 relative"
     :style="{
-      'background-image': `url(${require( home.background )})`
+      'background-image': `url(${require('~/assets/img/komorebi-1.jpg')})`
     }"
   >
     <div class="flex justify-center items-center h-screen">
