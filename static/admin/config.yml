@@ -9,13 +9,19 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home"
+      - label: "Home Page"
         name: "home"
         file: "content/home.yml"
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Highlight, name: highlight, widget: string }
           - { label: Background, name: background, widget: image }
+      
+      - label: "Products Page"
+        name: "products"
+        file: "content/products.yml"
+        fields:
+          - { label: Headline, name: headline, widget: string }
       
       - label: "Contact"
         name: "contact"

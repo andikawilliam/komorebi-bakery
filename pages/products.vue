@@ -40,7 +40,13 @@
 
 <script>
 export default {
+  async asyncData({ $content }) {
+    const home = await $content("products").fetch();
 
+    return {
+      products,
+    };
+  }
 }
 </script>
 
