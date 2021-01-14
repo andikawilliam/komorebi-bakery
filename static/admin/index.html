@@ -14,8 +14,10 @@
     <script type="module">
       import htm from 'https://unpkg.com/htm?module'
       const html = htm.bind(h);
+      
       const HomePreview = createClass({
         render: function() {
+          var entry = this.props.entry;
           return (
             html`
               <div className="h-screen flex justify-center">
