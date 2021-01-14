@@ -2,8 +2,12 @@ backend:
   name: git-gateway
   branch: main
 
+
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
+show_preview_links: false
+
 
 collections:
   - label: "Pages"
@@ -13,7 +17,6 @@ collections:
         name: "home"
         file: "content/home.yml"
         preview_path: home
-        show_preview_links: false
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Highlight, name: highlight, widget: string }
@@ -23,7 +26,6 @@ collections:
         name: "products"
         file: "content/products.yml"
         preview_path: products
-        show_preview_links: false
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Background, name: background, widget: image }
@@ -32,7 +34,6 @@ collections:
         name: "contact"
         file: "content/contact.yml"
         preview_path: contact
-        show_preview_links: false
         fields:
           - { label: Instagram, name: instagram, widget: string, hint: "Without @" }
           - { label: Whatsapp, name: whatsapp, widget: string, hint: "Without (+)"}
