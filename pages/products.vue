@@ -2,13 +2,13 @@
   <div
     class="h-screen bg-shadow bg-center bg-cover text-gray-200 relative"
     :style="{
-      'background-image': `url(${require('~/assets/img/komorebi-2.jpg')})`
+      'background-image': `url(${ products.background })`
     }"
   >
     <div class="flex justify-center items-center h-screen">
       <div class="w-4/5 lg:w-2/3">
         <div class="text-center text-4xl sm:text-6xl lg:text-6xl xl:text-7xl font-black line-height p-2 sm:p-4">
-          Our Specialties
+          {{ products.headline }}
         </div>
         <div
           class="w-4/5 mx-auto grid grid-cols-2 gap-4 sm:gap-24 text-lg font-semibold text-center mt-6"
@@ -41,7 +41,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const home = await $content("products").fetch();
+    const products = await $content("products").fetch();
 
     return {
       products,

@@ -12,6 +12,7 @@ collections:
       - label: "Home Page"
         name: "home"
         file: "content/home.yml"
+        preview_path: "home"
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Highlight, name: highlight, widget: string }
@@ -20,6 +21,7 @@ collections:
       - label: "Products Page"
         name: "products"
         file: "content/products.yml"
+        preview_path: "products"
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Background, name: background, widget: image }
