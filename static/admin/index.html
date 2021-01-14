@@ -6,9 +6,28 @@
     <title>Content Manager</title>
     <!-- Include the script that enables Netlify Identity on this page. -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script type="module">
+      import htm from 'https://unpkg.com/htm?module'
+      const html = htm.bind(h);
+      const HomePreview = createClass({
+        render: function() {
+          return (
+            html`
+              <div className="h-screen flex justify-center">
+                <h1 className='headline text-center'>
+                  ${entry.getIn(['data', 'headline'])}
+                  <span className='highlight text-red-500'>${entry.getIn(['data', 'highlight'])}</span>
+                </h1>
+              </div>
+            `
+          );
+        }
+      });
+    </script>
   </body>
 </html>
