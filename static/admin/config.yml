@@ -6,6 +6,8 @@ publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 site_url: "https://komorebi-bakery.netlify.app/"
+editor:
+  preview: false
 
 collections:
   - label: "Pages"
