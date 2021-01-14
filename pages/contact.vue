@@ -10,8 +10,8 @@
       <h1 class="text-3xl sm:text-5xl xl:text-6xl font-black">Contact</h1>
       <div class="mt-2 lg:mt-6 text-lg sm:text-xl">
         <p class="mb-2 font-semibold text-red-500">Komorebi Bakery<p/>
-        <p>
-          For order and more info contact us on:
+        <p class="mb-2">
+          For order and more info contact:
         </p>
         <a :href="instagramLink">
           <p class="hover:opacity-60">
