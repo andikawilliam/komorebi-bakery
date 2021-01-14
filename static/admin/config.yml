@@ -15,6 +15,7 @@ collections:
         fields:
           - { label: Headline, name: headline, widget: string }
           - { label: Highlight, name: highlight, widget: string }
+          - { label: Background, name: background, widget: image }
       
       - label: "Contact"
         name: "contact"
