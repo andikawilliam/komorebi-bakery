@@ -1,12 +1,11 @@
 backend:
   name: git-gateway
   branch: main
-
-
+  
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
-site_url: "https://komorebi-bakery.netlify.app/""
+site_url: "https://komorebi-bakery.netlify.app/"
 
 collections:
   - label: "Pages"
